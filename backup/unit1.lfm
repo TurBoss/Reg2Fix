@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 791
+  Height = 236
+  Top = 357
+  Width = 320
+  BorderStyle = bsDialog
+  Caption = 'Reg2Fix'
+  ClientHeight = 236
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '1.6.2.0'
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 36
+    Width = 79
+    Caption = 'Windows Units'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 194
+    Height = 15
+    Top = 36
+    Width = 65
+    Caption = 'Current Unit'
+    ParentColor = False
+  end
+  object UnitsCombo: TComboBox
+    Left = 32
+    Height = 23
+    Top = 88
+    Width = 100
+    ItemHeight = 15
+    OnChange = UnitsComboChange
+    TabOrder = 0
+    Text = 'UnitsCombo'
+  end
+  object Label3: TLabel
+    Left = 208
+    Height = 15
+    Top = 88
+    Width = 34
+    Caption = 'Label3'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 169
+    Height = 42
+    Top = 184
+    Width = 90
+    Caption = 'Change'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end
